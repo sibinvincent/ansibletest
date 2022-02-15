@@ -39,4 +39,12 @@ spec:
       targetPort: 80
   selector:
     app: softapp
-~
+---
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: febnamespace
+  labels:
+    name: febnamespace
+
+

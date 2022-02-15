@@ -10,5 +10,5 @@
        if      
          command: kubectl delete -f /root/deployment.yaml  
      else
-         command: kubectl apply -f /root/deployment.yaml
+        command: kubectl apply -f /root/deployment.yaml
       

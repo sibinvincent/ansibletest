@@ -2,9 +2,9 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
   name: softspace
-  namespace: default
+  namespace: febnamespace
 spec:
-  replicas: 20
+  replicas: 5
   minReadySeconds: 45 # wait for 45 sec before going to deploy next pod
   strategy:
     type: RollingUpdate
@@ -31,7 +31,7 @@ kind: Service
 apiVersion: v1
 metadata:
    name: softapp-svc
-   namespace: default
+   namespace: febnamespace
 spec:
   type: NodePort
   ports:
@@ -39,5 +39,15 @@ spec:
       targetPort: 80
   selector:
     app: softapp
+---
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: febnamespace
+  labels:
+    name: febnamespace
+
+    
+    
 
 

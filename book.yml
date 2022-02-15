@@ -5,10 +5,7 @@
     copy:
       src: deployment.yaml
       dest: /root/
-  - name: delete the previous of kubernetes objects 
-    shell: |
-       if      
-         command: kubectl delete -f /root/deployment.yaml  
-     else
-       kubectl apply -f /root/deployment.yaml
+  - name: delete the previous of kubernetes objects     
+    command: kubectl apply -f /root/deployment.yaml  
+     
       

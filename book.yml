@@ -5,6 +5,10 @@
     copy:
       src: deployment.yaml
       dest: /root/
+  - name: copy namespace file to kubernetes master 
+    copy:
+      src: namespace.yaml
+      dest: /root/
   - name: delete previous deployment in  kubernetes objects     
     command: kubectl delete -f /root/deployment.yaml
   - name: delete previous namespace in  kubernetes objects     

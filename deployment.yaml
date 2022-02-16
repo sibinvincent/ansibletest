@@ -4,7 +4,7 @@ metadata:
   name: softspace
   namespace: febnamespace
 spec:
-  replicas: 4
+  replicas: 20
   minReadySeconds: 45 # wait for 45 sec before going to deploy next pod
   strategy:
     type: RollingUpdate

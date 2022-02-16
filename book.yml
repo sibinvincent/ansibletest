@@ -19,7 +19,5 @@
     command: sh /root/key
   - name: create current deployment in  kubernetes objects     
     command: kubectl apply -f /root/deployment.yaml
-  - name: key to create secret
-    command: sh /root/key
      
       

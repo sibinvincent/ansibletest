@@ -6,6 +6,6 @@
       src: deployment.yaml
       dest: /root/
   - name: create pods in kubernetes objects     
-    command: kubectl apply -f /root/deployment.yaml  
+    command: kubectl delete -f /root/deployment.yaml  
      
       

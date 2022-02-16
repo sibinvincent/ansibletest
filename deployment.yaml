@@ -1,11 +1,4 @@
-kind: Namespace
-apiVersion: v1
-metadata:
-  name: febnamespace
-  labels:
-    name: febnamespace
-    
----    
+   
 kind: Deployment
 apiVersion: apps/v1
 metadata:

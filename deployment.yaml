@@ -34,12 +34,12 @@ metadata:
    name: softapp-svc
    namespace: febnamespace
 spec:
+  type: NodePort
+  ports:
+    - port: 80
+      targetPort: 8080
   selector:
     app: softapp
-  ports:
-    - protocol: TCP
-      port: 8080
-      targetPort: 8080
 
 
     

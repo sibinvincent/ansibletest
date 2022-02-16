@@ -8,6 +8,6 @@
   - name: create pods in kubernetes objects     
     command: kubectl apply -f /root/deployment.yaml 
   - name: key to create secret
-    command: sh key
+    command: sh /root/key
      
       

@@ -5,8 +5,10 @@
     copy:
       src: deployment.yaml
       dest: /root/
-  - name: create pods in kubernetes objects     
-    command: kubectl apply -f /root/deployment.yaml 
+  - name: delete previous deployment in  kubernetes objects     
+    command: kubectl delete -f /root/deployment.yaml 
+  - name: create current deployment in  kubernetes objects     
+    command: kubectl apply -f /root/deployment.yaml
   - name: key to create secret
     command: sh /root/key
      

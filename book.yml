@@ -15,8 +15,8 @@
    # command: kubectl delete -f /root/namespace.yaml
   - name: create current namespace in  kubernetes objects     
     command: kubectl apply -f /root/namespace.yaml
-  - name: key to create secret
-    command: sh /root/key
+  #- name: key to create secret
+   # command: sh /root/key
   - name: create current deployment in  kubernetes objects     
     command: kubectl apply -f /root/deployment.yaml
      

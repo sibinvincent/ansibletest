@@ -38,7 +38,7 @@ spec:
   ports:
     - port: 8080
       targetPort: 80
-      nodePort: 446
+      nodePort: 31000
   selector:
     app: softapp
 
